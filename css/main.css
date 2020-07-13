@@ -79,7 +79,7 @@ header nav ul li {
 header nav ul li a{
 	text-decoration: none;
 	color:#77a466;
-	padding: 10px 0;
+	padding: 10px 30px;
 }
 
 /*The widths are in a percentage!*/
@@ -117,26 +117,12 @@ header nav ul li a{
 	border-top: 1px solid #eee;
 }
 
-.section-one h4 {
-	padding: 10px 0;
-}
-
-.section-two {
-	border-left: 1px solid #eee;
-	border-right: 1px solid #eee;
-}
-
-.section-two h4,
-.section-three h4 {
-	padding: 10px 30px;
-}
-
 .menu {
 	list-style: none;
 	padding: 0;
 }
 .menu li {
-	padding: 10px 0;
+	padding: 10px 30px;
 	color:#77a466;
 }
 
@@ -176,11 +162,21 @@ footer span {
 		display: flex;
 		width: 100%;
 	}
+	.section-two {
+		border-left: 1px solid #eee;
+		border-right: 1px solid #eee;
+	}
+	.bottom-section h4 {
+		padding: 0 10px;
+	}
 
 }
 @media screen and (min-width: 1025px) {
-	header nav ul li {
-
+	header nav ul {
+		display: flex;
+		flex-direction: row;
+		justify-content: space-between;
+		/* padding: 10px 30px; */
 	}
 
 }
